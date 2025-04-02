@@ -1,0 +1,129 @@
+/* Estilização geral */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    position: relative; /* Garantir que o body tenha contexto para o z-index */
+}
+
+/* Overlay escurecido */
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1000; /* Colocar o overlay acima do conteúdo da página */
+}
+.overlay.active {
+    display: block;
+}
+
+/* Estilização do pop-up */
+.login-popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(180deg, #121243, #0c0c30);
+    padding: 30px;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 1100; /* Colocar o pop-up acima do overlay e do banner */
+}
+.login-popup.active {
+    display: block;
+}
+
+/* Título */
+.login-popup h2 {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Labels */
+.login-popup label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.login-popup input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+}
+.login-popup input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.login-popup input:focus {
+    border: 2px solid #6a5acd;
+}
+
+/* Link "Esqueci senha" */
+.forgot-password {
+    display: block;
+    text-align: right;
+    color: #6a5acd;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Botão de login */
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background: white;
+    color: #121243;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+.login-btn:hover {
+    background: white;
+    color: white;
+}
+
+/* Link de cadastro */
+.register-link {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+}
+.register-link:hover {
+    text-decoration: underline;
+}
+
+/* Imagem do Banner */
+.banner img {
+    position: relative;
+    z-index: 1; /* Colocar o banner abaixo do login e overlay */
+}
+
+/* Outros elementos podem ser ajustados conforme necessário */

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel Estilo Pódio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+           
+            justify-content: center;
+            
+            height: 100vh;
+            background-color: #111;
+        }
+        .swiper {
+            width: 80%;
+            height: 500px;
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .swiper-wrapper {
+            display: flex;
+            align-items: flex-end; /* Todas as imagens começam na base */
+        }
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+        }
+        .swiper-slide img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+        }
+        /* Mantendo tamanho fixo ao sair */
+        .swiper-slide:not(.swiper-slide-active) {
+            width: 260px;
+            height: 360px;
+            opacity: 0.6;
+            align-self: flex-end; /* Mantém as laterais na base da div */
+        }
+        /* Imagem central no topo com transição suave */
+        .swiper-slide-active {
+            width: 350px;
+            height: 450px;
+            transform: scale(1.1);
+            opacity: 1;
+            align-self: flex-start; /* Move a imagem do meio para o topo */
+        }
+        /* Estilizando os botões de navegação */
+        .swiper-button-next, .swiper-button-prev {
+            background-color: rgba(0, 0, 255, 0.7); /* Azul translúcido */
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .swiper-button-next::after, .swiper-button-prev::after {
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/Carrosel.jpeg" alt="Imagem 1"></div>
+            <div class="swiper-slide"><img src="img/Carrosel2.jpeg" alt="Imagem 2"></div>
+            <div class="swiper-slide"><img src="img/Carrosel3.jpeg" alt="Imagem 3"></div>
+            <div class="swiper-slide"><img src="img/Carrosel4.jpeg" alt="Imagem 4"></div>
+            <div class="swiper-slide"><img src="img/Carrosel5.jpeg" alt="Imagem 5"></div>
+        </div>
+        <!-- Botões de Navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,  
+            spaceBetween: 10,
+            loop: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000, /* Pequeno aumento para acompanhar a transição */
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            speed: 1200, /* Sincronizado com a transição do CSS */
+            effect: 'slide',
+        });
+    </script>
+
+</body>
+</html>

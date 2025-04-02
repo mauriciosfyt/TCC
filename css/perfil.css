@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    background: #2D2C2C;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #2D2C2C;
+    border-bottom: 2px solid blue;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.perfil {
+    margin-top: 20px;
+}
+
+.avatar {
+    width: 80px;
+}
+
+.cadastro {
+    margin-top: 20px;
+    padding: 65px;
+    width: 55%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+/* Alinhar tipo de plano à esquerda e duração do plano à direita */
+.plano {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.tipo-plano {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+.duracao-plano {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    background: black;
+    color: white;
+    border: 2px solid blue;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px; /* Borda arredondada nos campos de entrada */
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #2D2C2C, #0000ff);
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+   margin-left: 15px;
+  }
+  
+  .footer-social a img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-social a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.footer-logo img:hover {
+    opacity: 0.7; /* Ajuste o valor conforme necessário */
+}
+
+  .footer-bottom {
+    margin-top: 5px;
+    text-align: center;
+  
+  }
+  
+  .footer-terms a {
+    margin: 0 10px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-terms a:hover {
+    text-decoration: underline;
+  }
+  
+  
+/* Responsividade */
+@media (max-width: 1024px) {
+  nav ul {
+      gap: 30px;
+  }
+
+  .cadastro {
+      width: 70%;
+      padding: 50px;
+  }
+
+  .plano {
+      flex-direction: row;
+      align-items: flex-start;
+      gap: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: row; /* Mantém em linha */
+    flex-wrap: wrap; /* Permite quebra de linha se necessário */
+    justify-content: center; /* Centraliza os itens */
+}
+
+  .logo {
+    
+      margin-bottom: 10px;
+      margin-right: 10px;
+  }
+
+  nav ul {
+      flex-direction: row;
+      align-items: center;
+      margin-left: 25px;
+      gap: 15px;
+  }
+
+  .cadastro {
+      width: 85%;
+      padding: 40px;
+  }
+  
+
+}
+
+@media (max-width: 480px) {
+
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35px;
+    gap: 10px;
+}
+
+
+  .cadastro {
+      width: 95%;
+      padding: 30px;
+  }
+
+  input {
+      padding: 8px;
+  }
+
+
+}

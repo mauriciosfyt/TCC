@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2D2C2C;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2D2C2C;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.linha-topo-full {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #000080, #00f);
+    margin-bottom: 02px;
+}
+
+/* Banner styles */
+.banner {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: 700px; /* Ajusta a altura da imagem para ocupar toda a altura da tela */
+    object-fit: cover; /* Garante que a imagem cubra a tela sem distorcer */
+}
+
+
+.texto-personalizado {
+    position: absolute;
+    top: 40%; /* Centraliza melhor verticalmente */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 2.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adiciona uma sombra para melhor legibilidade */
+    padding: 0 20px; /* Garantir que o texto não fique colado nas bordas */
+}
+
+
+
+.footer {
+    background: linear-gradient(to bottom, #2D2C2C, #0000ff);
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+   margin-left: 15px;
+  }
+  
+  .footer-social a img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-social a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.footer-logo img:hover {
+    opacity: 0.7; /* Ajuste o valor conforme necessário */
+}
+
+  .footer-bottom {
+    margin-top: 5px;
+    text-align: center;
+  
+  }
+  
+  .footer-terms a {
+    margin: 0 10px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-terms a:hover {
+    text-decoration: underline;
+  }
+  
+  

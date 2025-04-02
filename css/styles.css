@@ -1,0 +1,329 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #2D2C2C;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilização do Header */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D2C2C;
+    height: 65px;  /* Altura fixa */
+}
+
+
+
+/* Estilização da Logo */
+.logo {
+    width: 95px; /* Ajuste conforme necessário */
+    height: auto;
+    
+}
+.logo.button {
+    width: 65px; /* Define a largura da imagem */
+    height: 65px; /* Define a altura da imagem */
+    cursor: pointer; /* Transforma a imagem em um botão clicável */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 50%; /* Deixa a imagem arredondada */
+    border: 2px solid transparent; /* Define uma borda inicial invisível */
+    position: absolute; /* Permite posicionamento absoluto */
+    right: 10px; /* Move o botão para a direita */
+}
+
+.logo.button:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente a imagem ao passar o mouse */
+    box-shadow: 0px 4px 8px #2D2C2C(0, 0, 0, 0.2); /* Adiciona uma leve sombra */
+}
+
+.logo.button:active {
+    transform: scale(0.95); /* Reduz ligeiramente ao clicar */
+    box-shadow: 0px 2px 4px #2D2C2C(0, 0, 0, 0.3); /* Ajusta a sombra ao clicar */
+}
+
+
+
+/* Estilização do Menu de Navegação */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-menu ul li a:hover {
+    color: #ff1616; /* Efeito hover no menu */
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+}
+.banner img {
+    width: 100%;
+    height: 650px;
+    display: block;
+    opacity: 0.5;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px #2D2C2C(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.plan-card {
+    background: #2D2C2C;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    border: 2px dashed white;
+    position: relative;
+}
+
+.plan-card h3 {
+    background: blue;
+    color: white;
+    padding: 5px 5px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.plan-card p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pricing-details {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.footer {
+    background: linear-gradient(to bottom, #2D2C2C, #0000ff);
+    color: white;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 50px;
+    margin-left: 20px;
+    margin-top: 40px;
+  }
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  .footer-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+   margin-left: 15px;
+  }
+  
+  .footer-social a img {
+    width: 28px;
+    height: 28px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-social a:hover img {
+    transform: scale(1.1);
+  }
+  
+  .footer-logo img {
+    max-width: 120px;
+    height: auto;
+    transition: opacity 0.3s;
+}
+
+.footer-logo img:hover {
+    opacity: 0.7; /* Ajuste o valor conforme necessário */
+}
+
+  .footer-bottom {
+    margin-top: 5px;
+    text-align: center;
+  
+  }
+  
+  .footer-terms a {
+    margin: 0 10px;
+    font-size: 13px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-terms a:hover {
+    text-decoration: underline;
+  }
+  
+  
+
+.accepted-payment {
+    display: flex;
+    gap: 10px; /* Espaço entre as imagens */
+    align-items: center; /* Alinha as imagens verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 10px; /* Espaço superior */
+}
+
+.accepted-payment img {
+    width: 150px; /* Ajuste o tamanho conforme necessário */
+    height: auto; /* Mantém a proporção */
+    object-fit: contain; /* Garante que a imagem não fique distorcida */
+    transition: transform 0.3s; /* Efeito de leve zoom */
+}
+
+.accepted-payment img:hover {
+    transform: scale(1.1); /* Aumenta levemente no hover */
+}
+/* Responsividade */
+@media (max-width: 1024px) {
+  .nav-menu ul {
+      gap: 15px;
+  }
+
+  .banner img {
+      height: 500px;
+  }
+
+  .cards {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .plans {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+  }
+
+  .plan-card {
+      width: 90%;
+      max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+      height: auto;
+      padding: 10px;
+  }
+
+  .nav-menu ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+
+  .banner img {
+      height: 400px;
+  }
+
+  .accepted-payment {
+      flex-wrap: wrap;
+  }
+
+  .accepted-payment img {
+      width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner img {
+      height: 300px;
+  }
+
+
+  .accepted-payment img {
+      width: 100px;
+  }
+}
