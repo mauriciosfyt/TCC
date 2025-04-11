@@ -326,4 +326,9 @@ body {
   .accepted-payment img {
       width: 100px;
   }
+  .carrosselUm .swiper1 {
+    top: 45%;  /* Ajusta a posição do carrossel em relação à tela */
+    margin: -27;  /* Remove a margem negativa que pode causar overflow */
+    left: 10%;  /* Ajusta a posição à esquerda para dar mais espaço */
+  }
 }

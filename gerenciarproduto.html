@@ -3,14 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Montagem de Treinos</title>
+  <title>Gerenciar Produtos</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/Montagemtreino.css" />
-
+  <link rel="stylesheet" href="css/gerenciar.css" />
 </head>
 <body>
-
-  <!-- Header -->
   <header class="container-fluid d-flex justify-content-between align-items-center">
     <div class="img-fluid">
         <img src="img/logo.png" alt="logoacademia" class="img-fluid">
@@ -24,57 +21,56 @@
     </nav>
 </header>
 
-<div class="linha-topo-full"></div>
+  <div class="linha-topo-full"></div>
 
-  <main class="container">
+  <main class="container mt-4">
+    <h2 class="text-white fw-bold">Gerenciar Produtos</h2>
+    <p class="text-white-50">
+      Nesta página você consegue gerenciar tudo relacionado aos seus produtos.
+      Adicione, edite e exclua seus produtos e seus respectivos modelos.
+    </p>
 
-    <h2 class="text-white fw-bold mb-4">Montagem de Treinos</h2>
-
-    <!-- Segunda -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/1.png" alt="Segunda-feira">
-      <div class="info-dia">
-        <h5>Segunda-Feira <span class="badge-dia">Hoje</span></h5>
-        <p class="text-white-50 m-0">Peito • Tríceps</p>
+    <section class="bg-dark p-4 rounded mt-4">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h5 class="text-white fw-semibold">Estoque de Produtos</h5>
+        <button class="btn btn-primary">Adicionar +</button>
       </div>
-    </div>
 
-    <!-- Terça -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/2.png" alt="Terça-feira">
-      <div class="info-dia">
-        <h5>Terça-Feira</h5>
-        <p class="text-white-50 m-0">Costas • Bíceps</p>
+      <div class="table-responsive">
+        <table class="table text-white table-dark align-middle">
+          <thead>
+            <tr>
+              <th>Produto</th>
+              <th>Estoque Atual</th>
+              <th>Vendidos</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <input type="text" class="form-control bg-dark text-white border-secondary" placeholder="Nome do produto">
+              </td>
+              <td>
+                <input type="number" class="form-control bg-dark text-white border-secondary" placeholder="Quantidade em estoque">
+              </td>
+              <td>
+                <input type="number" class="form-control bg-dark text-white border-secondary" placeholder="Quantidade vendida">
+              </td>
+            </tr>
+            <tr>
+              <td>Camisa Preta</td>
+              <td>2025</td>
+              <td>1011</td>
+            </tr>
+            <tr>
+              <td>Camisa Branca</td>
+              <td>1702</td>
+              <td>3408</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    </div>
-
-    <!-- Quarta -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/3.png" alt="Quarta-feira">
-      <div class="info-dia">
-        <h5>Quarta-Feira</h5>
-        <p class="text-white-50 m-0">Pernas • Inferiores</p>
-      </div>
-    </div>
-
-    <!-- Quinta -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/4.png" alt="Quinta-feira">
-      <div class="info-dia">
-        <h5>Quinta-Feira</h5>
-        <p class="text-white-50 m-0">Peito • Tríceps</p>
-      </div>
-    </div>
-
-    <!-- Sexta -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/5.png" alt="Sexta-feira">
-      <div class="info-dia">
-        <h5>Sexta-feira</h5>
-        <p class="text-white-50 m-0">Abdômen • Cardio</p>
-      </div>
-    </div>
-
+    </section>
   </main>
 
   <div class="footer-links">
@@ -89,8 +85,8 @@
       <li><a href="loja.html">Loja</a></li>
     </ul>
   </div>
-
-<footer class="footer">
+  
+  <footer class="footer">
     <div class="footer-top">
       <div class="footer-left">
         <div class="footer-social">
@@ -115,6 +111,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>

@@ -49,20 +49,41 @@ nav ul li a {
     margin-bottom: 10px;
 }
 
+    main {
+      background-color: #2D2C2C;
+      padding: 2rem;
+      border-radius: 10px;
+    }
 
+    .card-dia {
+      background-color: #2D2C2C;
+      border: 2px solid #00bfff;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      padding: 1rem;
+    }
 
-.video-list img {
-    max-width: 250px;
-    max-height: 250px;
-    object-fit: cover;
-}
+    .card-dia img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
 
-.pagination .page-item .page-link {
-    background-color: blue;
-    color: white;
-}
+    .info-dia {
+      margin-left: 1rem;
+    }
 
-.footer {
+    .badge-dia {
+      background-color: #00bfff;
+      color: white;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .footer {
     background: linear-gradient(to bottom, #2D2C2C, #0000ff);
     color: white;
     padding: 10px;
@@ -80,7 +101,7 @@ nav ul li a {
   .footer-left {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
   }
   
   .footer-links {
@@ -153,5 +174,3 @@ nav ul li a {
   .footer-terms a:hover {
     text-decoration: underline;
   }
-  
-  

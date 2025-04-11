@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #2D2C2C;
+    color: white;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #2D2C2C;
+  }
+  
+  .img-fluid{
+    width: 50px;
+    height: 50px;
+  }
+  
+  nav {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .linha-topo-full {
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(to right, #000080, #00f);
+
+  }
+
+    /* Hero image */
+    .hero img {
+      width: 100%;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    /* Custom image styling */
+    .img-custom {
+  height: 280px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #0d6efd;
+}
+  
+      main {
+        padding: 20px;
+        text-align: center;
+      }
+  
+      .dias {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+      }
+  
+      .dias button {
+        background-color: #2d2c2c;
+        border: 1px solid #59a1ff;
+        color: #fff;
+        padding: 8px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 12px;
+        text-transform: uppercase;
+      }
+  
+      .dias button:hover {
+        background-color: #3c3c3c;
+      }
+  
+      .horarios-container {
+        max-width: 700px;
+        margin: 0 auto;
+        background-color: #1f1f1f;
+        border: 1px solid #59a1ff;
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+  
+      .horarios-container h3 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+      }
+  
+      .horario-card {
+        border: 1px solid #59a1ff;
+        border-radius: 6px;
+        padding: 10px 15px;
+        margin-bottom: 15px;
+        background-color: #1f1f1f;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+  
+      .horario-topo {
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        gap: 8px;
+      }
+  
+      .horario-rodape {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 14px;
+        padding: 0 5px;
+      }
+  
+      .status.disponivel {
+        color: #00ff00;
+        font-weight: bold;
+      }
+  
+      .status.indisponivel {
+        color: #ff4d4d;
+        font-weight: bold;
+      }
+  
+      .agendar {
+        color: #ffcc00;
+        font-weight: bold;
+        cursor: pointer;
+      }
+  
+      .footer {
+      background: linear-gradient(to bottom, #2D2C2C, #0000ff);
+      color: white;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    
+    .footer-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+    
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .footer-links {
+      display: flex;
+      gap: 50px;
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+    }
+    
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+    
+    .footer-social {
+      display: flex;
+      gap: 15px;
+      margin-top: 10px;
+     margin-left: 15px;
+    }
+    
+    .footer-social a img {
+      width: 28px;
+      height: 28px;
+      opacity: 0.8;
+      transition: opacity 0.3s;
+    }
+    
+    .footer-social a:hover img {
+      transform: scale(1.1);
+    }
+    
+    .footer-logo img {
+      max-width: 120px;
+      height: auto;
+      transition: opacity 0.3s;
+  }
+  
+  .footer-logo img:hover {
+      opacity: 0.7; /* Ajuste o valor conforme necessário */
+  }
+  
+    .footer-bottom {
+      margin-top: 5px;
+      text-align: center;
+    
+    }
+    
+    .footer-terms a {
+      margin: 0 10px;
+      font-size: 13px;
+      color: white;
+      text-decoration: none;
+    }
+    
+    .footer-terms a:hover {
+      text-decoration: underline;
+    }

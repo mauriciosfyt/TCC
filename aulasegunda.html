@@ -3,14 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Montagem de Treinos</title>
+  <title>Aulas de Segunda</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/Montagemtreino.css" />
-
+  <link rel="stylesheet" href="css/aulasegunda.css" />
 </head>
 <body>
 
-  <!-- Header -->
   <header class="container-fluid d-flex justify-content-between align-items-center">
     <div class="img-fluid">
         <img src="img/logo.png" alt="logoacademia" class="img-fluid">
@@ -23,58 +21,40 @@
         </ul>
     </nav>
 </header>
+  <!-- Linha de destaque -->
+  <div class="linha-topo-full"></div>
 
-<div class="linha-topo-full"></div>
+  <main class="container mt-4 ">
+    <h2 class="mb-4 fw-bold text-center">Aulas de Segunda</h2>
 
-  <main class="container">
-
-    <h2 class="text-white fw-bold mb-4">Montagem de Treinos</h2>
-
-    <!-- Segunda -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/1.png" alt="Segunda-feira">
-      <div class="info-dia">
-        <h5>Segunda-Feira <span class="badge-dia">Hoje</span></h5>
-        <p class="text-white-50 m-0">Peito • Tríceps</p>
+    <!-- Exemplo de bloco de exercício -->
+    <div class="bg-secondary bg-opacity-25 p-3 rounded mb-4">
+      <span class="badge bg-primary mb-2">BI-SET</span>
+      <div class="d-flex gap-3">
+        <img src="img/academia.jpeg" class="img-thumbnail" alt="Exercício" style="width: 100px; height: 100px; object-fit: cover;">
+        <div>
+          <h5 class="mb-1 text-white">Voador Frontal</h5>
+          <p class="mb-0 text-white-50">3 séries • 10 reps • 60s descanso</p>
+        </div>
       </div>
     </div>
 
-    <!-- Terça -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/2.png" alt="Terça-feira">
-      <div class="info-dia">
-        <h5>Terça-Feira</h5>
-        <p class="text-white-50 m-0">Costas • Bíceps</p>
+    <div class="bg-secondary bg-opacity-25 p-3 rounded mb-4">
+      <div class="d-flex gap-3">
+        <img src="img/academia2.jpeg" class="img-thumbnail" alt="Exercício" style="width: 100px; height: 100px; object-fit: cover;">
+        <div>
+          <h5 class="mb-1 text-white">Crucifixo reto</h5>
+          <p class="mb-0 text-white-50">3 séries • 10 reps • 60s descanso</p>
+        </div>
       </div>
     </div>
 
-    <!-- Quarta -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/3.png" alt="Quarta-feira">
-      <div class="info-dia">
-        <h5>Quarta-Feira</h5>
-        <p class="text-white-50 m-0">Pernas • Inferiores</p>
-      </div>
-    </div>
+    <!-- Adicione mais blocos como os acima conforme os exercícios -->
 
-    <!-- Quinta -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/4.png" alt="Quinta-feira">
-      <div class="info-dia">
-        <h5>Quinta-Feira</h5>
-        <p class="text-white-50 m-0">Peito • Tríceps</p>
-      </div>
+    <div class="d-flex justify-content-center gap-3 mt-4">
+      <button class="btn btn-outline-light">Iniciar Sequência</button>
+      <button class="btn btn-primary">Finalizar Treino</button>
     </div>
-
-    <!-- Sexta -->
-    <div class="card-dia d-flex align-items-center">
-      <img src="img/5.png" alt="Sexta-feira">
-      <div class="info-dia">
-        <h5>Sexta-feira</h5>
-        <p class="text-white-50 m-0">Abdômen • Cardio</p>
-      </div>
-    </div>
-
   </main>
 
   <div class="footer-links">
@@ -115,6 +95,5 @@
       </div>
     </div>
   </footer>
-
 </body>
 </html>

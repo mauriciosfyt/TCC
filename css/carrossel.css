@@ -1,211 +1,243 @@
 body {
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    height: 100vh;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  height: 100vh;
+  background-color: #2D2C2C;
+}
+
+.carrosselUm .swiper1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  z-index: 2;
+}
+
+.carrosselUm .swiper1 .swiper-wrapper {
+  display: flex;
+  align-items: flex-end; /* Todas as imagens começam na base */
+}
+
+.carrosselUm .swiper1 .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+.carrosselUm .swiper1 .swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+/* Mantendo tamanho fixo ao sair */
+.carrosselUm .swiper1 .swiper-slide:not(.swiper-slide-active) {
+  width: 260px;
+  height: 360px;
+  opacity: 0.6;
+  align-self: flex-end; /* Mantém as laterais na base da div */
+}
+
+/* Imagem central no topo com transição suave */
+.carrosselUm .swiper-slide-active {
+  width: 350px;
+  height: 450px;
+  opacity: 1;
+  align-self: flex-start; /* Move a imagem do meio para o topo */
+}
+
+/* Estilizando os botões de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: rgba(0, 0, 255, 0.7); /* Azul translúcido */
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Base: 3 imagens por linha */
+.carrosselUm .swiper-slide {
+  width: calc(100% / 3); /* 3 imagens lado a lado */
+}
+
+/* iPhone 5, iPhone SE 2016 (até 320px) */
+@media (max-width: 320px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 131px;
   }
-  
-  .carrosselUm .swiper1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    z-index: 2;
+}
+
+/* iPhone 13 Mini até iPhone 13 Pro Max (321px - 390px) */
+@media (min-width: 321px) and (max-width: 390px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 140px;
   }
-  
-  .carrosselUm .swiper1 .swiper-wrapper {
-    display: flex;
-    align-items: flex-end; /* Todas as imagens começam na base */
+  .swiper1 {
+    margin-top: -38%;
   }
-  
-  .carrosselUm .swiper1 .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+}
+
+/* iPhone 14 até iPhone 16 (391px - 430px) */
+@media (min-width: 391px) and (max-width: 430px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 180px;
   }
-  
-  .carrosselUm .swiper1 .swiper-slide img {
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    transition: transform 1.2s ease-out, opacity 1.2s ease-out;
+  .swiper1 {
+    margin-top: -35%;
   }
-  
-  /* Mantendo tamanho fixo ao sair */
-  .carrosselUm .swiper1 .swiper-slide:not(.swiper-slide-active) {
-    width: 260px;
-    height: 360px;
-    opacity: 0.6;
-    align-self: flex-end; /* Mantém as laterais na base da div */
+}
+
+/* iPhone 14 Plus até iPhone 15 Plus (431px - 500px) */
+@media (min-width: 431px) and (max-width: 500px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 180px;
   }
-  
-  /* Imagem central no topo com transição suave */
-  .carrosselUm .swiper-slide-active {
-    width: 350px;
-    height: 450px;
-    opacity: 1;
-    align-self: flex-start; /* Move a imagem do meio para o topo */
+  .swiper1 {
+    margin-top: -28%;
   }
-  
-  /* Estilizando os botões de navegação */
-  .swiper-button-next,
-  .swiper-button-prev {
-    background-color: rgba(0, 0, 255, 0.7); /* Azul translúcido */
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+/* Ajuste geral para tablets pequenos e celulares maiores (501px - 800px) */
+@media (min-width: 501px) and (max-width: 800px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 320px;
   }
-  
-  /* Responsividade para diferentes dispositivos */
-  /* iPhone 5, iPhone SE 2016 */
-  @media (max-width: 320px) {
-    .carrosselUm .swiper-slide img {
-      max-height: 200px;
-    }
+  .swiper1 {
+    margin-top: -28%;
   }
-  
-  /* iPhone 13 Mini, iPhone 13, iPhone 13 PRO, iPhone 13 PRO MAX */
-  @media (max-width: 390px) {
-    .carrosselUm .swiper-slide img {
-      max-height: 250px;
-    }
+}
+
+
+
+/* iPad Mini e tablets pequenos (768px a 999px) */
+@media (min-width: 768px) and (max-width: 999px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 300px;
   }
-  
-  /* iPhone 14, iPhone 15, iPhone 16 */
-  @media (max-width: 430px) {
-    .carrosselUm .swiper-slide img {
-      max-height: 280px;
-    }
+  .swiper1 {
+    margin-top: -28%;
   }
-  
-  /* iPhone 14 Plus, iPhone 14 PRO, iPhone 14 PRO MAX, iPhone 15 Plus */
-  @media (max-width: 500px) {
-    .carrosselUm .swiper-slide img {
-      max-height: 300px;
-    }
+}
+
+/* iPad Air 4, iPad PRO 11, Galaxy Tab S7, etc (800px a 880px) */
+@media (min-width: 800px) and (max-width: 880px) {
+  .carrosselUm .swiper-slide img {
+    max-height: 370px;
   }
-  
-  /* iPad Mini, iPad Air 4, iPad PRO 11, Galaxy Tab S7, Microsoft Surface Duo */
-  @media (max-width: 800px) {
-    .carrosselUm .swiper-slide img {
-      max-height: 150px;
-    }
+  .swiper1 {
+    margin-top: -33%;
   }
-  
-  /* iPad Air, iPad Mini */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .carrosselUm .swiper-slide img {
-      max-height: 380px;
-    }
-  }
-  
-  
-  .swiper-button-next::after,
-  .swiper-button-prev::after {
-    font-size: 20px;
-    color: white;
-  }
-  
-  /* Estilos para o segundo carrossel */
-  /* Início do segundo carrossel */
-  .swiper2 {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  
-  .swiper2 .swiper-slide {
-    text-align: center;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .swiper2 .swiper-slide img {
-    width: 220px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-    position: relative;
-  }
-  
+}
+
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px;
+  color: white;
+}
+
+/* Estilos para o segundo carrossel */
+/* Início do segundo carrossel */
+.swiper2 {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.swiper2 .swiper-slide {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.swiper2 .swiper-slide img {
+  width: 220px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.product-name {
+  position: absolute;
+  bottom: 14px;
+  left: 70px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align: left;
+  max-width: 80%;
+}
+
+.swiper-pagination-bullet {
+  background: var(--swiper-pagination-bullet-inactive-color, #fff);
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+
+
+/* Responcividade carrossel 2 */
+/* iPhone 5, iPhone SE 2016 */
+@media (max-width: 320px) {
   .product-name {
-    position: absolute;
-    bottom: 14px;
-    left: 70px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-align: left;
-    max-width: 80%;
+    left: 5px;  /* Coloca mais próximo da borda esquerda */
+    font-size: clamp(10px, 4vw, 16px); /* Ajusta o tamanho da fonte para telas pequenas */
   }
-  
-  .swiper-pagination-bullet {
-    background: var(--swiper-pagination-bullet-inactive-color, #fff);
+}
+
+/* iPhone 13 Mini, iPhone 13, iPhone 13 PRO, iPhone 13 PRO MAX */
+@media (max-width: 390px) {
+  .product-name {
+    left: 10px; /* Ajusta para 10px da borda esquerda */
+    font-size: clamp(12px, 4vw, 18px); /* Ajusta o tamanho da fonte para telas pequenas */
   }
-  
-  .swiper-pagination-bullet-active {
-    background: var(--swiper-pagination-color, var(--swiper-theme-color));
+}
+
+/* iPhone 14 (iOS 16), iPhone 15, iPhone 16 */
+@media (max-width: 430px) {
+  .product-name {
+    left: 15px; /* Ajusta para 15px da borda esquerda */
+    font-size: clamp(14px, 4vw, 20px); /* Ajusta o tamanho da fonte para telas maiores */
   }
-  
-  
-  
-  /* Responcividade carrossel 2 */
-  /* iPhone 5, iPhone SE 2016 */
-  @media (max-width: 320px) {
-    .product-name {
-      left: 5px;  /* Coloca mais próximo da borda esquerda */
-      font-size: clamp(10px, 4vw, 16px); /* Ajusta o tamanho da fonte para telas pequenas */
-    }
+}
+
+/* iPhone 14 Plus, iPhone 14 PRO, iPhone 14 PRO MAX, iPhone 15 Plus */
+@media (max-width: 500px) {
+  .product-name {
+    left: 20px; /* Ajusta para 20px da borda esquerda */
+    font-size: clamp(14px, 4vw, 20px); /* Ajusta o tamanho da fonte para telas maiores */
   }
-  
-  /* iPhone 13 Mini, iPhone 13, iPhone 13 PRO, iPhone 13 PRO MAX */
-  @media (max-width: 390px) {
-    .product-name {
-      left: 10px; /* Ajusta para 10px da borda esquerda */
-      font-size: clamp(12px, 4vw, 18px); /* Ajusta o tamanho da fonte para telas pequenas */
-    }
+}
+
+/* iPad Mini, iPad Air 4, iPad PRO 11, Galaxy Tab S7, Microsoft Surface Duo */
+@media (max-width: 800px) {
+  .product-name {
+    left: 100px; /* Ajusta para 30px da borda esquerda */
+    font-size: clamp(14px, 3vw, 22px); /* Ajusta o tamanho da fonte para telas maiores */
   }
-  
-  /* iPhone 14 (iOS 16), iPhone 15, iPhone 16 */
-  @media (max-width: 430px) {
-    .product-name {
-      left: 15px; /* Ajusta para 15px da borda esquerda */
-      font-size: clamp(14px, 4vw, 20px); /* Ajusta o tamanho da fonte para telas maiores */
-    }
+}
+
+/* iPad Air, iPad Mini */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .product-name {
+    left: 10px; /* Ajusta para 50px da borda esquerda */
+    font-size: clamp(14px, 3vw, 22px); /* Ajusta o tamanho da fonte para telas grandes */
+    
   }
-  
-  /* iPhone 14 Plus, iPhone 14 PRO, iPhone 14 PRO MAX, iPhone 15 Plus */
-  @media (max-width: 500px) {
-    .product-name {
-      left: 20px; /* Ajusta para 20px da borda esquerda */
-      font-size: clamp(14px, 4vw, 20px); /* Ajusta o tamanho da fonte para telas maiores */
-    }
-  }
-  
-  /* iPad Mini, iPad Air 4, iPad PRO 11, Galaxy Tab S7, Microsoft Surface Duo */
-  @media (max-width: 800px) {
-    .product-name {
-      left: 100px; /* Ajusta para 30px da borda esquerda */
-      font-size: clamp(14px, 3vw, 22px); /* Ajusta o tamanho da fonte para telas maiores */
-    }
-  }
-  
-  /* iPad Air, iPad Mini */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .product-name {
-      left: 10px; /* Ajusta para 50px da borda esquerda */
-      font-size: clamp(14px, 3vw, 22px); /* Ajusta o tamanho da fonte para telas grandes */
-      
-    }
-  }
+}

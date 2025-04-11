@@ -1,47 +1,46 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: Arial, sans-serif;
-    background-color: #2D2C2C;
-    color: white;
+  font-family: Arial, sans-serif;
+  background-color: #2D2C2C;
+  color: white;
 }
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    background-color: #2D2C2C;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2D2C2C;
 }
 
-
-.img-fluid {
-    width: 50px;
-    height: 50px;
+.img-fluid{
+  width: 50px;
+  height: 50px;
 }
 
 nav {
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 nav ul li {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .linha-topo-full {
