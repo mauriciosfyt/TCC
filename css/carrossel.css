@@ -23,6 +23,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
   transition: transform 1.2s ease-out, opacity 1.2s ease-out;
 }
 
