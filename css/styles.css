@@ -93,6 +93,17 @@ body {
     opacity: 0.5;
 }
 
+.Planos {
+    position: relative;
+    text-align: center;
+}
+.Planos img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    opacity: 0.5;
+}
+
 
 
 .cards {
@@ -276,20 +287,11 @@ body {
       height: 500px;
   }
 
-  .cards {
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  }
+.Planos img {
+    height: 500px;
+}
 
-  .plans {
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-  }
 
-  .plan-card {
-      width: 90%;
-      max-width: 280px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -315,6 +317,13 @@ body {
   .accepted-payment img {
       width: 120px;
   }
+
+
+.Planos img {
+    height: 300px;
+}
+
+
 }
 
 @media (max-width: 480px) {
@@ -331,4 +340,9 @@ body {
     margin: -27;  /* Remove a margem negativa que pode causar overflow */
     left: 10%;  /* Ajusta a posição à esquerda para dar mais espaço */
   }
+
+  .Planos img {
+    height: 200px;
+}
+
 }

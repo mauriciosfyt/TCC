@@ -46,14 +46,23 @@ nav ul li a {
     width: 100%;
     height: 2px;
     background: linear-gradient(to right, #000080, #00f);
-    margin-bottom: 10px;
+}
+.banner {
+  position: relative;
+  text-align: center;
+}
+.banner img {
+  width: 100%;
+  height: 650px;
+  display: block;
+  opacity: 0.5;
 }
 
+
         .content {
-            max-width: 900px;
-            margin: 40px auto;
+            max-width: 1300px;
             padding: 20px;
-            background-color: #222;
+            background-color: #2D2C2C;
             border-radius: 10px;
         }
         .section {
@@ -65,12 +74,12 @@ nav ul li a {
 }
 
 .section img {
-    width: 50%; /* ou 35%, como preferir */
+    width: 55%; /* ou 35%, como preferir */
     border-radius: 10px;
 }
 
 .section .text {
-    width: 60%; /* ou ajuste proporcional ao novo tamanho da imagem */
+    width: 90%; /* ou ajuste proporcional ao novo tamanho da imagem */
     text-align: justify;
 }
         .footer {
@@ -164,3 +173,38 @@ nav ul li a {
   .footer-terms a:hover {
     text-decoration: underline;
   }
+
+
+
+@media (max-width: 768px) {
+
+  .banner img {
+      height: 400px;
+  }
+
+  .section img {
+    width: 50%; /* ou 35%, como preferir */
+    border-radius: 10px;
+}
+
+.section .text {
+    width: 50%; /* ou ajuste proporcional ao novo tamanho da imagem */
+    text-align: justify;
+}
+}
+
+@media (max-width: 480px) {
+  .banner img {
+      height: 200px;
+  }
+  .section img {
+    width: 50%; /* ou 35%, como preferir */
+    border-radius: 10px;
+}
+
+.section .text {
+    width: 50%; /* ou ajuste proporcional ao novo tamanho da imagem */
+    text-align: justify;
+}
+
+}
