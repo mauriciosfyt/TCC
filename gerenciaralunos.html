@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciamento de Aluno</title>
+  <link rel="stylesheet" href="css/alunos.css" />
+</head>
+<body>
+  <header class="container-fluid d-flex justify-content-between align-items-center p-3">
+    <img src="img/logo.png" alt="logoacademia" class="img-fluid" width="45" height="45">
+    <a href="adm.html">
+      <img src="icones/Home.png" alt="Home" width="50" height="50">
+    </a>
+  </header>
+
+  <div class="linha-topo-full"></div>
+
+  <main>
+    <section class="container">
+      <button class="add-btn" onclick="mostrarFormulario()">➕ Adicionar Aluno</button>
+
+     
+      <div id="form-cadastro" class="form-group hidden">
+        <label>Nome:</label>
+        <input type="text" id="nomeCadastro" />
+        <label>Email:</label>
+        <input type="email" id="emailCadastro" />
+        <label>Senha:</label>
+        <input type="password" id="senhaCadastro" />
+
+        <div class="center">
+          <button class="cadastrar-btn" onclick="cadastrarAluno()">CADASTRAR ALUNO(A)</button>
+        </div>
+      </div>
+
+      
+      <div class="form-group">
+        <label>Nome:</label>
+        <input type="text" />
+        <label>Email:</label>
+        <input type="email" />
+        <label>Senha:</label>
+        <input type="password" />
+        <div class="btn-group">
+          <button class="edit-btn">Editar</button>
+          <button class="delete-btn">Excluir</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label>Nome:</label>
+        <input type="text" />
+        <label>Email:</label>
+        <input type="email" />
+        <label>Senha:</label>
+        <input type="password" />
+        <div class="btn-group">
+          <button class="edit-btn">Editar</button>
+          <button class="delete-btn">Excluir</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <div class="footer-links">
+    <ul>
+      <li><a href="gerenciaralunos.html">Gerenciar Aluno</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+    </ul>
+    <ul>
+      <li><a href="adicionarproduto.html">Adicionar Produtos</a></li>
+      <li><a href="gerenciarprofessores.html">Gerenciar Professores</a></li>
+    </ul>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left"></div>
+      <div class="footer-logo">
+        <img src="img/logo1.png" alt="Logo Otávio Pereira">
+      </div>
+    </div>
+    <div class="footer-bottom"></div>
+  </footer>
+
+  
+  <script src="js/alunos.js"></script>
+</body>
+</html>
