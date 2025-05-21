@@ -19,7 +19,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
     background-color: #2D2C2C;
     color: #ffffff; /* Letras brancas no header */
 }
@@ -71,7 +70,6 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column;
     background-color: #2D2C2C;
-    padding: 20px;
     color: white; /* Garantir texto branco */
 }
 

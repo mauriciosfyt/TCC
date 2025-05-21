@@ -8,7 +8,7 @@ body {
   .card-gestao {
     background-size: cover;
     background-position: center;
-    height: 200px;
+    height: 150px;
     border-radius: 10px;
     position: relative;
     display: flex;
@@ -173,3 +173,21 @@ body {
     text-decoration: underline;
   }
   
+
+  
+  @media (max-width: 768px) {
+  
+    .card-gestao{
+      height: 100px;
+    }
+    
+  }
+  
+  @media (max-width: 480px) {
+  
+    .card-gestao{
+      height: 70px;
+    }
+    
+  
+  }
